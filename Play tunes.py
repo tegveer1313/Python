@@ -1,6 +1,11 @@
 import vlc
-p = vlc.MediaPlayer("SP_Balasubrahmanyam_&_Chitra_live_Sathiya_Ye_Tune_Kya_Kiya_-_साथिया_ये_तूने_क्या_किया_subscribe(256k).mp3")
+p = vlc.MediaPlayer("HappyBirthDay.mp3")
 p.play()
-a = input("Press 's' to stope Tune.    ")
-if a == "s" :
-    p.stop()
+while True:
+    a = input("Press 's' to stop Tune or 'p' to play song again or 'e' to exit the player    ")
+    if a == "s" :
+        p.stop()
+    elif a == "p":
+        p.play()
+    elif a == "e":
+        exit()
